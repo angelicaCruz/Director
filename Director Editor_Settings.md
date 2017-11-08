@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+
+
+
+# Director Editor : Settings 
+
+Director is METoolKit-based application so if you've tried METoolKit before, you may find similarities in the Project and Build settings of this project. 
+
+Before proceeding, make sure you have the following: 
+
+```
+Unity 5.5 or later
+Visual Studio 2017
+Director Package with METoolkit
+Mesh Expert Center
+```
+
+### Create a scene
+
+1. In the **Project** panel, search for **MEHoloEntrance** prefab and drag it in the **Heirarchy**. 
+
+2. Select MEHoloEntrance and go to the **Inspector** panel.  Add **App ID** and click on **Create All MEHolo Module** to create **MEHolo** game object that contains all Mesh Expert modules. 
+
+3. Search for **DirectoryManager** prefab and drag it in the Heirarchy. 
+
+4. Create an empty game object and name it **Main App**. 
+
+5. Select MainApp object and in the Inspector click on **Add Component** -> **New Script** and name it **MainAppScript**.
+
+6. Open your **MainAppScript** and paste the code below.
+
+   ```c#
+
+   using System.Collections;
+   using System.Collections.Generic;
+   using UnityEngine;
+   using Newtonsoft.Json;
+   using DataMesh.AR;
+   using DataMesh.AR.Director;
+   using DataMesh.AR.Interactive;
+
+   public class MainAppScript : MonoBehaviour
+   {
+       private DirectorManager directorManager;
+       private MultiInputManager inputManager;
+
+       // Use this for initialization
+       void Start()
+       {
+           StartCoroutine(WaitForInit());
+       }
+
+       private IEnumerator WaitForInit()
+       {
+           MEHoloEntrance entrance = MEHoloEntrance.Instance;
+           while (!entrance.HasInit)
+           {
+               yield return null;
+           }
+           directorManager = DirectorManager.Instance;
+           directorManager.Init();
+           directorManager.TurnOn();
+       }
+   }
+   ```
+
+7. Save the scene to make the changes permanent. 
+
+### Project and Build Settings
+
+1. ​ Open **Edit** -> **Project Settings** -> **Quality**.
+   (settings1)
+2. In the **Inspector** panel go under **Windows Store** icon. Click on **Default** arrow and choose **Fastest**. You will see a green check right under Windows Store icon. 
+   (settings2)
+3. Find **Other** under the same panel and change **V Sync Count** to **Don't Sync**. 
+   (sync 3)
+
+That's it for the Project Settings for this project. Below are the procedures to **Build** your project correctly. Our target device in our current scenario is the HoloLens. Once this procedure is done, other build for other devices will come easy. 
+
+4. Open **File** -> **Build Settings** -> **Player Settings**.
+
+5. Add the scene you created with **Add Open Scene** button. Uncheck other scenes if there are any. 
+
+6. Click on **Windows Store** and choose **Switch Platform**. If this is done correctly, you will see Unity icon beside Windows Store. 
+
+7. In the right side, do the following changes: 
+
+   ```
+   SDK: Universal10
+   Target Device: HoloLens
+   UWP Build Type: D3D
+   Check Unity C# Project
+   ```
+
+8. Click on **Player Settings** -> **Other Settings**. Check **Virtual Reality Supported** and Windows Holographic will appear as the default SDK. 
+
+9. Go to **Publishing Settings** -> **Capabilities** and check the following:
+
+   ```
+   InternetClient
+   InternetClientServer
+   PrivateNetworkClientServer
+   WebCam
+   SpatialPerception
+   Microphone
+   ```
+
+10. Click **Build** button to start the process. Create a folder that will contain all build-related information and the VisualStudio solution that will be used to deploy the application on device. 
+
+### Deploy on Device
+
+1. Open the folder that contains build information and search for the VisualStudio solution and open it. 
+
+2. Connect your HoloLens with you Pc through USB cable for a faster deploy. 
+
+3. In the panel above, do as follows: 
+
+   ```
+   Debug: Release
+   x64: x86
+   Local Machine: Device
+   ```
+
+4. Press **ctrl + F5** or press the icon beside **Device**.
+
+**Note**: It is possible to deploy through WI-FI. Just change **Local Machine: Remote Machine**. A window will appear and you will have to provide your HoloLens IP address. You can find this address in your HoloLens. Go to **Settings** -> **Network & Internet ** -> **Advance option** -> **Ipv4 address**.
