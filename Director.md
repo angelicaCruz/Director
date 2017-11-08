@@ -1,8 +1,9 @@
 # Director
 
 ## Overview	
-
-![Directorxml](C:\Users\DataMesh\Documents\GitHub\Directorxml.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32530273-17e0913c-c478-11e7-86b0-5dcf3213b458.png">
+</p>
 
   ### Contents
 
