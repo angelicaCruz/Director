@@ -1,4 +1,7 @@
 # Director Editor
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32530278-1c555bc6-c478-11e7-9135-78db0cf8654a.png">
+</p>
 
 ## Scenario 
 
