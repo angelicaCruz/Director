@@ -35,6 +35,7 @@ Disapper
 
 5. Find your FSM Json file and in the Heirarchy select **DirectorManager**. Drag you FSM Json file in **Test Scripts** in the Inspector panel. Below is a sample Debug messages of a successful FSM Json file creation
 <p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32531603-aeea1d08-c47f-11e7-8fda-4c558279edfc.png">
 <img src="https://user-images.githubusercontent.com/26377727/32528895-5dad3a9c-c470-11e7-94da-a9fc3650b451.png">
 </p>
 
