@@ -14,8 +14,15 @@ Mesh Expert Center
 ### Create a scene
 
 1. In the **Project** panel, search for **MEHoloEntrance** prefab and drag it in the **Heirarchy**. 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528888-5c3af0dc-c470-11e7-8e90-5d65fc6612d3.png">
+</p>
 
 2. Select MEHoloEntrance and go to the **Inspector** panel.  Add **App ID** and click on **Create All MEHolo Module** to create **MEHolo** game object that contains all Mesh Expert modules. 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528890-5ca33b9c-c470-11e7-9e38-171c28943547.png">
+<img src="https://user-images.githubusercontent.com/26377727/32528889-5c6da478-c470-11e7-8753-d9606084f104.png">
+</p>
 
 3. Search for **DirectoryManager** prefab and drag it in the Heirarchy. 
 
