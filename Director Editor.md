@@ -54,12 +54,23 @@ Unlike any Unity scene, there is no need to drag objects on the scene. The creat
 
 1. As suggested above, click on the **Start/Create** state. In the Inspector panel find **Actions** and click **( + )** button to add an action. 
 2. Select **DataMesh** -> **Director** -> **Create( ... )**. Choose the creation action accordingly to the type of your action. **AssetRole** is for 3D models, **PicRole** is for image type role, **SoundRole** is for audio clips and **TextRole** is for text type roles. 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528898-5e522dcc-c470-11e7-95f3-734be850055f.png">
+</p>
+
 3.  After adding the action, a panel related to that action will appear in the Inspector panel. 
-   (sc7)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528899-5eac72f0-c470-11e7-92bb-b3b82ee39c3d.png">
+</p>
+
 4. Click on **Asset Location** to choose from where the application will download the assets from. Click on **Asset** to choose which asset to use. There are two locations to choose from: **Local Resource** and **Asset In Storage**. The first one will create roles from the objects inside **Resources** folder in Unity while the latter will download Asset bundle form DataMesh cloud. If you want to use your own models, choose the firs one making sure you have the Resources folder and your models are in it.
 5. Add **Role Id**. A different Id must be given to different roles as actions need a Role Id to be related to a specific role. 
 6. Add **Anchor Id**. Click on the button and **Click to create new variable** to create a new anchor variable. It will show on you FSM window under **Variables**.  Make sure that different roles have different anchors. Two roles sharing the same anchor id won't create any error during the application's execution but will give you visual problems as two roles will share the same position. Have in mind that in the beginning of the application, the user will be asked to position the anchors of the roles.  
-   ( sc8.1 sc8)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528864-5779933c-c470-11e7-91b3-b6e636578823.png" />
+<img src="https://user-images.githubusercontent.com/26377727/32528865-57aa6688-c470-11e7-854b-b10780f84de8.png">
+</p>
+
    **Note**: Create action does not imply the immediate appearance of a role in the scenario. You need to add **Appearance** action. 
 
 ### Adding an Action 
