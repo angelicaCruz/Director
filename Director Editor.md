@@ -88,17 +88,27 @@ Tween Action: manipulates the role's material, transform(scale, position and rot
 
 1. In your FSM window select any state, under the **Actions** list, select **( + )**  button. 
 2. Select **DataMesh** -> **Director** -> **Add( ... )**.
-   (sc9)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528866-57e3106e-c470-11e7-85e3-31bb0d5abb20.png">
+</p>
+
 3. Add **Role Id**. This value must the id of the role you want to bind the action to. Aside from Role Id, **Delay** and **Duration** are frequently used. The first one is the number of real-time seconds after which the action will start. The second on the other hand is length of the whole action. 
-   (sc10)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528867-5817ab26-c470-11e7-9def-978b0626930b.png">
+</p>
 
 ### Adding Transitions and Conditions
 
 **Transitions** are arrows that start from one stage and end pointing to the next stage. They are performed when **Conditions** are satisfied. 
 
 1. Select any state, right click and choose **Make Transition**. This will create automatically a transition both in the FSM window and in the Inspector panel of the state. 
-   (sc11)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528868-58482210-c470-11e7-9ff0-969e8f7963d3.png">
+</p>
+
 2. To add a Condition, in the Inspector panel of the selected stage find **Conditions** list and click **( + )**. Select **DataMesh** -> **Director**. We suggest to choose between **NextStage** and **TimeEnd** as they the stable choices. The first one is a user dependent trigger and it is based on the AirTap event coming from the user. The second one instead, is basically a timer set by the developer and when this timer reaches 0, then the transition is performed. 
    In using TimeEnd, Delay and Duration must be considered. Thus, TimeEnd must not be inferior to both of the mentioned variables from the action's panel. 
-   (sc12).
+<p align="center">
+<img src="https://user-images.githubusercontent.com/26377727/32528869-587b0c20-c470-11e7-87b6-d017f3072058.png">
+</p>
 
