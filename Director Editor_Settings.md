@@ -73,15 +73,15 @@ Mesh Expert Center
 
 1. Open **Edit** -> **Project Settings** -> **Quality**.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528870-58ad052c-c470-11e7-9522-2ba7f9ea1d6d.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528870-58ad052c-c470-11e7-9522-2ba7f9ea1d6d.png">
 </p>
 2. In the **Inspector** panel go under **Windows Store** icon. Click on **Default** arrow and choose **Fastest**. You will see a green check right under Windows Store icon. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528871-5911faf4-c470-11e7-9a3d-3ceec20535e3.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528871-5911faf4-c470-11e7-9a3d-3ceec20535e3.png">
 </p>
 3. Find **Other** under the same panel and change **V Sync Count** to **Don't Sync**. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528872-5965db56-c470-11e7-9c98-27aa0537cb03.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528872-5965db56-c470-11e7-9c98-27aa0537cb03.png">
 </p>
 
 That's it for the Project Settings for this project. Below are the procedures to **Build** your project correctly. Our target device in our current scenario is the HoloLens. Once this procedure is done, other build for other devices will come easy. 
@@ -106,7 +106,7 @@ That's it for the Project Settings for this project. Below are the procedures to
 
 8. Click on **Player Settings** -> **Other Settings**. Check **Virtual Reality Supported** and Windows Holographic will appear as the default SDK. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528882-5aea0a6a-c470-11e7-9cfe-aa1bfbe3b395.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528882-5aea0a6a-c470-11e7-9cfe-aa1bfbe3b395.png">
 </p>
 
 9. Go to **Publishing Settings** -> **Capabilities** and check the following:
@@ -126,7 +126,7 @@ That's it for the Project Settings for this project. Below are the procedures to
 
 1. Open the folder that contains build information and search for the VisualStudio solution and open it. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528883-5b20fe80-c470-11e7-9c9f-eefa304f7e41.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528883-5b20fe80-c470-11e7-9c9f-eefa304f7e41.png">
 </p>
 
 2. Connect your HoloLens with you Pc through USB cable for a faster deploy. 
@@ -139,12 +139,12 @@ That's it for the Project Settings for this project. Below are the procedures to
    Local Machine: Device
    ```
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528884-5b54af50-c470-11e7-8822-0d68465e7451.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528884-5b54af50-c470-11e7-8822-0d68465e7451.png">
 </p>
 
 4. Press **ctrl + F5** or press the icon beside **Device**.
 
 **Note**: It is possible to deploy through WI-FI. Just change **Local Machine: Remote Machine**. A window will appear and you will have to provide your HoloLens IP address in the **Address** section. You can find this address in your HoloLens. Go to **Settings** -> **Network & Internet** -> **Advance option** -> **Ipv4 address**.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528885-5b966576-c470-11e7-81e8-223db0bd0847.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528885-5b966576-c470-11e7-81e8-223db0bd0847.png">
 </p>
