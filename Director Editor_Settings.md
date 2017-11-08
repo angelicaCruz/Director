@@ -20,7 +20,7 @@ Mesh Expert Center
 
 2. Select MEHoloEntrance and go to the **Inspector** panel.  Add **App ID** and click on **Create All MEHolo Module** to create **MEHolo** game object that contains all Mesh Expert modules. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528890-5ca33b9c-c470-11e7-9e38-171c28943547.png">
+<img src="https://user-images.githubusercontent.com/26377727/32528890-5ca33b9c-c470-11e7-9e38-171c28943547.png" height="350">
 <img src="https://user-images.githubusercontent.com/26377727/32528889-5c6da478-c470-11e7-8753-d9606084f104.png">
 </p>
 
