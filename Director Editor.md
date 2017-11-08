@@ -67,7 +67,7 @@ Unlike any Unity scene, there is no need to drag objects on the scene. The creat
 5. Add **Role Id**. A different Id must be given to different roles as actions need a Role Id to be related to a specific role. 
 6. Add **Anchor Id**. Click on the button and **Click to create new variable** to create a new anchor variable. It will show on you FSM window under **Variables**.  Make sure that different roles have different anchors. Two roles sharing the same anchor id won't create any error during the application's execution but will give you visual problems as two roles will share the same position. Have in mind that in the beginning of the application, the user will be asked to position the anchors of the roles.  
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528864-5779933c-c470-11e7-91b3-b6e636578823.png" />
+<img src="https://user-images.githubusercontent.com/26377727/32528864-5779933c-c470-11e7-91b3-b6e636578823.png">
 <img src="https://user-images.githubusercontent.com/26377727/32528865-57aa6688-c470-11e7-854b-b10780f84de8.png">
 </p>
 
