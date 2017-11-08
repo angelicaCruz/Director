@@ -20,19 +20,19 @@ Disapper
 
 2. Right click and then **Create** -> **Unity Coding** -> **ICode** -> **State Machine**. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528893-5d4715f0-c470-11e7-83ba-aa70dc7aaac7.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528893-5d4715f0-c470-11e7-83ba-aa70dc7aaac7.png">
 </p>
 
 3. Create the corresponding Json file your FSM. Right click on your FSM and choose **DataMesh** -> **Director** -> **Parse Data From StateMachine**. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32529464-ba4f160a-c473-11e7-8c88-4449c1010070.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32529464-ba4f160a-c473-11e7-8c88-4449c1010070.png">
 </p>
 
 4. You will not see the Json file immediately. You have to leave Unity window and get back to it. The Json file will appear. 
 
 5. Find your FSM Json file and in the Heirarchy select **DirectorManager**. Drag you FSM Json file in **Test Scripts** in the Inspector panel. Below is a sample Debug messages of a successful FSM Json file creation
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528895-5dad3a9c-c470-11e7-94da-a9fc3650b451.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528895-5dad3a9c-c470-11e7-94da-a9fc3650b451.png">
 </p>
 
    **Note**: for every changes you make on your FSM you have to repeat the 5 steps listed above to make 
@@ -40,12 +40,12 @@ Disapper
 
 6. To create a stage, double click on your FSM and the an FSM window will appear. Right click on the window and select **Create State**.  We suggest to have **Start/Create** and **End** stages. Put in the first stage create actions and put nothing in the latter. You can have as many stages as you need, just be organized. 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528896-5de31518-c470-11e7-84df-8fc89ebea39d.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528896-5de31518-c470-11e7-84df-8fc89ebea39d.png">
 </p>
 
 7. To create a **transition**, right click on the state and select **Make Transition**.
 <p align="center">
-<img src="https://user-images.githubusercontent.com/26377727/32528897-5e1c89f6-c470-11e7-94b8-a31756c17f74.png" width="400">
+<img src="https://user-images.githubusercontent.com/26377727/32528897-5e1c89f6-c470-11e7-94b8-a31756c17f74.png">
 </p>
 
 ### Creating a Role
